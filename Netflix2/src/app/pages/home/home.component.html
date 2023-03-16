@@ -1,1 +1,6 @@
-<p>home works!</p>
+<form class="form" [formGroup]="FormHome" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <input placeholder="E-mail" type="email" formControlName="email">
+    </div>
+    <button type="submit" routerLink="/cadastro">Vamos</button>
+</form>

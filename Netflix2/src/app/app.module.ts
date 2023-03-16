@@ -12,6 +12,7 @@ import { SeriesComponent } from './pages/series/series.component';
 import { CardSerieComponent } from './components/card-serie/card-serie.component';
 import { EpisodiosComponent } from './pages/episodios/episodios.component';
 import { CardEpisodiosComponent } from './components/card-episodios/card-episodios.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { CardEpisodiosComponent } from './components/card-episodios/card-episodi
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
